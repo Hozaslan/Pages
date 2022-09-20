@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+body{
+  background-color: #141414;
+  color: white;
+  font-family: 'VT323', monospace;
+  font-size: 30px;
+}
+
+a{
+  color: yellow;
+}
+
+#btn-reset{
+  color: gray;
+  cursor: pointer;
+}
+
+a:hover, #btn-reset:hover{
+  color: cyan;
+}
