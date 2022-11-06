@@ -30,7 +30,7 @@
   <header id="header" class="fixed-top">
     <div class="container d-flex align-items-center justify-content-between">
 
-      <h1 class="logo"><a href="index.html">hozaslan </a></h1>
+      <h1 class="logo"><a href="/">hozaslan </a></h1>
       <!-- Uncomment below if you prefer to use an image logo -->
       <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
@@ -38,8 +38,9 @@
         <ul>
           <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
           <li><a class="nav-link scrollto" href="#about">About</a></li>
-          <li><a class="nav-link scrollto" href="#services">Resume</a></li>
+          <li><a class="nav-link scrollto" href="#resume">Resume</a></li>
           <li><a class="nav-link scrollto " href="#work">Work</a></li>
+          <li><a class="nav-link scrollto " href="#achievements">Achievements</a></li>
           <li><a class="nav-link scrollto " href="#blog">Blog</a></li>
           <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
         </ul>
@@ -135,10 +136,10 @@
       </div>
     </section><!-- End About Section -->
 
-    <!-- ======= Services Section ======= -->
-    <section id="services" class="services-mf grad-2 pt-5  route">
+    <!-- ======= Resume Section ======= -->
+    <section class="services-mf grad-2 pt-5  route">
       <div class="container">
-        <div class="row">
+        <div id="resume" class="row">
           <div class="col-sm-12">
             <div class="title-box text-center">
               <h3 class="title-a" style="color:azure">
@@ -180,10 +181,19 @@
                   Security subjects with a final CTF event.
                 </li>
               </div>
+              <hr>
+              <div class="col-md-12">
+                <h2 class="s-title" style="text-align:left;">SOCRadar CTI Analyst Bootcamp</h2>
+                <h6 class="s-title"> SOCRadar - 2022</h6>
+                <li>
+                  Attended the CTI analyst bootcamp organized by SOCRadar. Bootcamp was consisted of 46 training
+                  sessions lasting 135 hours and 9 weeks between August 1 and September 30, 2022
+                </li>
+              </div>
             </div>
           </div>
         </div>
-        <div class="row">
+        <div class="row" id="work">
           <div class="col-sm-12">
             <div class="title-box text-center">
               <h3 class="title-a" style="color:azure">
@@ -240,17 +250,30 @@
             </div>
           </div>
         </div>
-    </section><!-- End Services Section -->
+    </section><!-- End Resume/work Section -->
 
-    <!-- ======= Counter Section ======= -->
-    <div class="section-counter paralax-mf bg-image" style="background-image: url(assets/img/counters-bg2.jpg)">
-      <div class="overlay-mf"></div>
+    <!-- ======= Achiebements Section ======= -->
+
+    <div class="section-counter paralax-mf bg-image" id="achievements"
+      style="background-image: url(assets/img/overlay-bg2.jpg); background-size: cover;">
+      <div class="title-box text-center">
+        <h3 class="title-a" style="color: rgb(255, 255, 255);">
+          Achievements
+        </h3>
+        <div class="line-mf"></div>
+        <br>
+        <br>
+      </div>
+
       <div class="container position-relative">
+
         <div class="row">
           <div class="col-sm-3 col-lg-3">
             <div class="counter-box counter-box pt-4 pt-md-0">
               <div class="counter-ico">
-                <span class="ico-circle"><i class="bi bi-check"></i></span>
+                <a href="/projects">
+                  <span class="ico-circle"><i class="bi bi-briefcase"></i></span>
+                </a>
               </div>
               <div class="counter-num">
                 <p data-purecounter-start="0" data-purecounter-end="7" data-purecounter-duration="1"
@@ -262,7 +285,9 @@
           <div class="col-sm-3 col-lg-3">
             <div class="counter-box pt-4 pt-md-0">
               <div class="counter-ico">
-                <span class="ico-circle"><i class="bi bi-journal-richtext"></i></span>
+                <a href="#work">
+                  <span class="ico-circle"><i class="bi bi-calendar-check"></i></span>
+                </a>
               </div>
               <div class="counter-num">
                 <p data-purecounter-start="0" data-purecounter-end="2" data-purecounter-duration="1"
@@ -274,7 +299,9 @@
           <div class="col-sm-3 col-lg-3">
             <div class="counter-box pt-4 pt-md-0">
               <div class="counter-ico">
-                <span class="ico-circle"><i class="bi bi-people"></i></span>
+                <a href="/certs">
+                  <span class="ico-circle"><i class="bi bi-journal-bookmark"></i></span>
+                </a>
               </div>
               <div class="counter-num">
                 <p data-purecounter-start="0" data-purecounter-end="10" data-purecounter-duration="1"
@@ -286,7 +313,9 @@
           <div class="col-sm-3 col-lg-3">
             <div class="counter-box pt-4 pt-md-0">
               <div class="counter-ico">
-                <span class="ico-circle"><i class="bi bi-award"></i></span>
+                <a href="/awards">
+                  <span class="ico-circle"><i class="bi bi-award"></i></span>
+                </a>
               </div>
               <div class="counter-num">
                 <p data-purecounter-start="0" data-purecounter-end="48" data-purecounter-duration="1"
@@ -297,178 +326,12 @@
           </div>
         </div>
       </div>
-    </div><!-- End Counter Section -->
+    <!--</div>
 
-    <!-- ======= Portfolio Section ======= -->
-    <!--<section id="work" class="portfolio-mf grad-3 sect-pt4 route">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12">
-            <div class="title-box text-center">
-              <h3 class="title-a" style="color:azure">
-                Portfolio
-              </h3>
-              <p class="subtitle-a">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              </p>
-              <div class="line-mf"></div>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-4">
-            <div class="work-box">
-              <a href="assets/img/work-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
-                <div class="work-img">
-                  <img src="assets/img/work-1.jpg" alt="" class="img-fluid">
-                </div>
-              </a>
-              <div class="work-content">
-                <div class="row">
-                  <div class="col-sm-8">
-                    <h2 class="w-title">Lorem impsum dolor</h2>
-                    <div class="w-more">
-                      <span class="w-ctegory">Web Design</span> / <span class="w-date">18 Sep. 2018</span>
-                    </div>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="w-like">
-                      <a href="portfolio-details.html"> <span class="bi bi-plus-circle"></span></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="work-box">
-              <a href="assets/img/work-2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
-                <div class="work-img">
-                  <img src="assets/img/work-2.jpg" alt="" class="img-fluid">
-                </div>
-              </a>
-              <div class="work-content">
-                <div class="row">
-                  <div class="col-sm-8">
-                    <h2 class="w-title">Loreda Cuno Nere</h2>
-                    <div class="w-more">
-                      <span class="w-ctegory">Web Design</span> / <span class="w-date">18 Sep. 2018</span>
-                    </div>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="w-like">
-                      <a href="portfolio-details.html"> <span class="bi bi-plus-circle"></span></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="work-box">
-              <a href="assets/img/work-3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
-                <div class="work-img">
-                  <img src="assets/img/work-3.jpg" alt="" class="img-fluid">
-                </div>
-              </a>
-              <div class="work-content">
-                <div class="row">
-                  <div class="col-sm-8">
-                    <h2 class="w-title">Mavrito Lana Dere</h2>
-                    <div class="w-more">
-                      <span class="w-ctegory">Web Design</span> / <span class="w-date">18 Sep. 2018</span>
-                    </div>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="w-like">
-                      <a href="portfolio-details.html"> <span class="bi bi-plus-circle"></span></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="work-box">
-              <a href="assets/img/work-4.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
-                <div class="work-img">
-                  <img src="assets/img/work-4.jpg" alt="" class="img-fluid">
-                </div>
-              </a>
-              <div class="work-content">
-                <div class="row">
-                  <div class="col-sm-8">
-                    <h2 class="w-title">Bindo Laro Cado</h2>
-                    <div class="w-more">
-                      <span class="w-ctegory">Web Design</span> / <span class="w-date">18 Sep. 2018</span>
-                    </div>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="w-like">
-                      <a href="portfolio-details.html"> <span class="bi bi-plus-circle"></span></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="work-box">
-              <a href="assets/img/work-5.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
-                <div class="work-img">
-                  <img src="assets/img/work-5.jpg" alt="" class="img-fluid">
-                </div>
-              </a>
-              <div class="work-content">
-                <div class="row">
-                  <div class="col-sm-8">
-                    <h2 class="w-title">Studio Lena Mado</h2>
-                    <div class="w-more">
-                      <span class="w-ctegory">Web Design</span> / <span class="w-date">18 Sep. 2018</span>
-                    </div>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="w-like">
-                      <a href="portfolio-details.html"> <span class="bi bi-plus-circle"></span></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="work-box">
-              <a href="assets/img/work-6.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
-                <div class="work-img">
-                  <img src="assets/img/work-6.jpg" alt="" class="img-fluid">
-                </div>
-              </a>
-              <div class="work-content">
-                <div class="row">
-                  <div class="col-sm-8">
-                    <h2 class="w-title">Studio Big Bang</h2>
-                    <div class="w-more">
-                      <span class="w-ctegory">Web Design</span> / <span class="w-date">18 Sep. 2017</span>
-                    </div>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="w-like">
-                      <a href="portfolio-details.html"> <span class="bi bi-plus-circle"></span></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
 
-        </div>
-      </div>
-    </section>-->
-    <!-- End Portfolio Section -->
-
-    <!-- ======= Testimonials Section ======= -->
-    <div class="testimonials paralax-mf bg-image" style="background-image: url(assets/img/overlay-bg2.jpg)">
-      <div class="overlay-mf"></div>
+    
+    <div class="testimonials paralax-mf bg-image" style="background-image: url(assets/img/overlay-bg2.jpg)">-->
+      
       <div class="container">
         <div class="row">
           <div class="col-md-12">
@@ -478,49 +341,57 @@
 
                 <div class="swiper-slide">
                   <div class="testimonial-box">
-                    
-                    <div class="author-test">                      
-                      <img src="assets/img/testimonial-2.jpg" alt="" class="rounded-circle b-shadow-a">
+
+                    <div class="author-test">
+                      <img src="assets/img/testimonial-2.jpg" alt="" class="outl rounded-circle b-shadow-a">
                       <span class="author">tryhackme</span>
                     </div>
                     <div class="content-test">
-                      <p class="description lead">
-                        TryHackMe is an online platform that teaches cyber security through short, gamified real-world labs. We have content for both complete beginners and seasoned hackers, incorporation guides and challenges to cater for different learning styles.
-                        <script src="https://tryhackme.com/badge/364615"><a href="https://tryhackme.com/p/hozaslan"/></script>                        
+                      <p class="description lead"><strong>
+                        TryHackMe is an online platform that teaches cyber security through short, gamified real-world
+                        labs. We have content for both complete beginners and seasoned hackers, incorporation guides and
+                        challenges to cater for different learning styles.</strong>
+                        <script
+                          src="https://tryhackme.com/badge/364615"><a href="https://tryhackme.com/p/hozaslan" target="_blank" /></script>
                       </p>
                     </div>
                   </div>
-                </div><!-- End testimonial item -->
+                </div>
 
                 <div class="swiper-slide">
                   <div class="testimonial-box">
                     <div class="author-test">
-                      <img src="assets/img/testimonial-4.jpg" alt="" class="rounded-circle b-shadow-a">
+                      <img src="assets/img/testimonial-4.jpg" alt="" class="outl rounded-circle b-shadow-a">
                       <span class="author">Letsdefend</span>
                     </div>
                     <div class="content-test">
-                      <p class="description lead">
-                        LetsDefend is a hands-on Blue Team training platform that enables people to gain practical experience by investigating real cyber attacks inside a simulated SOC.
-                      </p>
-                      <p><a href="https://app.letsdefend.io/public_profile/user/hozaslan/e0a783c3-f584-45f8-9559-cde908495b7a/" style="color:aqua;">Visit</a></p>
+                      <p class="description lead"><strong>
+                        LetsDefend is a hands-on Blue Team training platform that enables people to gain practical
+                        experience by investigating real cyber attacks inside a simulated SOC.
+                      </p></strong>
+                      <p><a
+                          href="https://app.letsdefend.io/public_profile/user/hozaslan/e0a783c3-f584-45f8-9559-cde908495b7a/"
+                          target="_blank" style="color:aqua;">Visit</a></p>
                     </div>
                   </div>
-                </div><!-- End testimonial item -->
+                </div>
 
                 <div class="swiper-slide">
                   <div class="testimonial-box">
                     <div class="author-test">
-                      <img src="assets/img/testimonial-3.jpg" alt="" class="rounded-circle b-shadow-a">
+                      <img src="assets/img/testimonial-3.jpg" alt="" class="outl rounded-circle b-shadow-a">
                       <span class="author">Hackerrank</span>
                     </div>
                     <div class="content-test">
-                      <p class="description lead">
-                        HackerRank is a tech company that focuses on competitive programming challenges for both consumers and businesses. Developers compete by writing programs according to provided specifications.
+                      <p class="description lead"><strong>
+                        HackerRank is a tech company that focuses on competitive programming challenges for both
+                        consumers and businesses. Developers compete by writing programs according to provided
+                        specifications.</strong>
                       </p>
-                      <p><a href="https://www.hackerrank.com/Hozaslan" style="color:aqua;">Visit</a></p>
+                      <p><a href="https://www.hackerrank.com/Hozaslan" target="_blank" style="color:aqua;">Visit</a></p>
                     </div>
                   </div>
-                </div><!-- End testimonial item -->
+                </div>
               </div>
               <div class="swiper-pagination"></div>
             </div>
@@ -531,21 +402,20 @@
           </div>
         </div>
       </div>
-    </div><!-- End Testimonials Section -->
+    </div>
+    <!-- End Achievements Section -->
 
     <!-- ======= Blog Section ======= -->
-    <!--<section id="blog" class="blog-mf sect-pt4 route">
+    <section id="blog" class="blog-bg-img sect-pt4 route" style="background-image: url('assets/img/blog-2.jpg'); background-size: cover; ">
       <div class="container">
+        <!--
         <div class="row">
           <div class="col-sm-12">
             <div class="title-box text-center">
-              <h3 class="title-a">
-                Blog
+              <h3 class="title-a" style="color:rgb(64, 192, 224) ;">
+                Latest Blog posts
               </h3>
-              <p class="subtitle-a">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              </p>
-              <div class="line-mf"></div>
+              
             </div>
           </div>
         </div>
@@ -567,7 +437,7 @@
                   a pellentesque nec,
                   egestas non nisi.
                 </p>
-              </div>
+              </div>              
               <div class="card-footer">
                 <div class="post-author">
                   <a href="#">
@@ -581,6 +451,8 @@
               </div>
             </div>
           </div>
+
+          
           <div class="col-md-4">
             <div class="card card-blog">
               <div class="card-img">
@@ -645,64 +517,18 @@
           </div>
         </div>
       </div>
-    </section>--><!-- End Blog Section -->
+      -->
+      <!-- End Blog Section -->
 
-    <!-- ======= Contact Section ======= -->
-    <section id="contact" class="paralax-mf footer-paralax bg-image sect-mt4 route"
-      style="background-image: url(assets/img/overlay-bg.jpg); margin-top: 0em;">
-      <div class="overlay-mf"></div>
+      <!-- ======= Contact Section ======= -->
+      <!--<section id="contact" class="paralax-mf footer-paralax bg-image sect-mt4 route"
+      style="background-image: url(assets/img/overlay-bg.jpg); margin-top: 0em;">-->
+      
       <div class="container">
         <div class="row">
           <div class="col-sm-12">
             <div class="contact-mf">
-              <div id="contact" class="box-shadow-full">
-                <div class="row">
-                  <div class="col-md-6">
-                    <div class="title-box-2">
-                      <h5 class="title-left">
-                        Send A Mail
-                      </h5>
-                    </div>
-                    <div>
-                      <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-                        <div class="row">
-                          <div class="col-md-12 mb-3">
-                            <div class="form-group">
-                              <input type="text" name="name" class="form-control" id="name" placeholder="Your Name"
-                                required>
-                            </div>
-                          </div>
-                          <div class="col-md-12 mb-3">
-                            <div class="form-group">
-                              <input type="email" class="form-control" name="email" id="email" placeholder="Your Email"
-                                required>
-                            </div>
-                          </div>
-                          <div class="col-md-12 mb-3">
-                            <div class="form-group">
-                              <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject"
-                                required>
-                            </div>
-                          </div>
-                          <div class="col-md-12">
-                            <div class="form-group">
-                              <textarea class="form-control" name="message" rows="5" placeholder="Message"
-                                required></textarea>
-                            </div>
-                          </div>
-                          <div class="col-md-12 text-center my-3">
-                            <div class="loading">Loading</div>
-                            <div class="error-message"></div>
-                            <div class="sent-message">Your message has been sent. Thank you!</div>
-                          </div>
-                          <div class="col-md-12 text-center">
-                            <button type="submit" class="button button-a button-big button-rouded">Send Message</button>
-                          </div>
-                        </div>
-                      </form>
-                    </div>
-                  </div>
-                  <div class="col-md-6">
+              <div id="contact" class="box-shadow-full">                
                     <div class="title-box-2 pt-4 pt-md-0">
                       <h5 class="title-left">
                         Get in Touch
@@ -714,18 +540,28 @@
                         Send an e-mail or contact via social media.
                       </p>
                       <ul class="list-ico">
-                        <li><span class="bi bi-geo-alt"></span> Aydınevler Mahallesi İnönü Caddesi No:20 Küçükyalı Ofispark B Blok - Maltepe / İSTANBUL                        </li>
+                        <li><span class="bi bi-geo-alt"></span> Aydınevler Mahallesi İnönü Caddesi No:20 Küçükyalı
+                          Ofispark B Blok - Maltepe / İSTANBUL </li>
                         <!--<li><span class="bi bi-phone"></span> (617) 557-0089</li>-->
                         <li><span class="bi bi-envelope"></span> hacozaslan@gmail.com</li>
                       </ul>
                     </div>
                     <div class="socials">
                       <ul>
-                        <li><a href=""><span class="ico-circle"><i class="bi bi-facebook"></i></span></a></li>
-                        <li><a href=""><span class="ico-circle"><i class="bi bi-instagram"></i></span></a></li>
-                        <li><a href=""><span class="ico-circle"><i class="bi bi-twitter"></i></span></a></li>
-                        <li><a href=""><span class="ico-circle"><i class="bi bi-linkedin"></i></span></a></li>
+                        <!--<li><a href=""><span class="ico-circle"><i class="bi bi-facebook"></i></span></a></li>
+                        <li><a href=""><span class="ico-circle"><i class="bi bi-instagram"></i></span></a></li>-->
+                        <li><a href="https://twitter.com/HACemilzaslan1" target="_blank"><span class="ico-circle"><i
+                                class="bi bi-twitter"></i></span></a></li>
+                        <li><a href="https://www.linkedin.com/in/hozaslan/" target="_blank"><span class="ico-circle"
+                              style="line-height: 1.2;"><i class="bi bi-linkedin"></i></span></a></li>
                       </ul>
+                    </div>
+
+                    <div class="col-sm-12">
+                      <div class="copyright-box">
+                        <p class="copyright">&copy; <strong>Hozaslan</strong>.</p>
+                      </div>
+
                     </div>
                   </div>
                 </div>
@@ -733,29 +569,27 @@
             </div>
           </div>
         </div>
-      </div>
     </section><!-- End Contact Section -->
 
   </main><!-- End #main -->
 
-  <!-- ======= Footer ======= -->
+  <!-- ======= Footer ======= 
   <footer>
     <div class="container">
       <div class="row">
         <div class="col-sm-12">
           <div class="copyright-box">
-            <p class="copyright">&copy; Copyright <strong>Hozaslan</strong>. All Rights Reserved</p>
+            <p class="copyright">&copy; Copyright <strong>Hozaslan</strong>.</p>
           </div>
         </div>
       </div>
     </div>
-  </footer><!-- End  Footer -->
+  </footer> End  Footer -->
 
   <div id="preloader"></div>
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
       class="bi bi-arrow-up-short"></i></a>
 
-  <!-- Vendor JS Files -->
   <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
@@ -764,7 +598,6 @@
   <script src="assets/vendor/php-email-form/validate.js"></script>
 
 
-  <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
   <script src="assets/js/terminal.js"></script>
   <script src="assets/js/matrix.js"></script>
